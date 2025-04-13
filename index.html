@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz App</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+        <form>
+            <div class="form-options">
+                <div class="categories">
+                    <p><span>Select category</span></p>
+                    <div>
+                        <input type="radio" id="general_knowledge" name="category" value="9">
+                        <label for="general_knowledge">General Knowledge</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" id="sports" name="category" value="21">
+                        <label for="sports">Sports</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" id="science_computers" name="category" value="18">
+                        <label for="science_computers">Science: Computers</label>
+                    </div>
+                </div>
+    
+    
+                <div class="difficulties">
+                    <p><span>Select difficulty</span></p>
+                    <div>
+                        <input type="radio" id="random" name="difficulty" value="">
+                        <label for="random">Random</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" id="category_easy" name="difficulty" value="easy">
+                        <label for="category_easy">Easy</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" id="category_medium" name="difficulty" value="medium">
+                        <label for="">Medium</label>
+                    </div>
+    
+                    <div>
+                        <input type="radio" id="category_hard" name="difficulty" value="hard">
+                        <label for="category_hard">Hard</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-start">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+
+        <div class="display_question">
+            <div>
+                <h1><span class="question"></span></h1>
+            </div>
+            <div class="answers">
+                <ul>
+                    <li><button type="button" class="answer">somethig has an answer</button></li>
+                    <li><button type="button" class="answer">somethig has an answer</button></li>
+                    <li><button type="button" class="answer">somethig has an answer</button></li>
+                    <li><button type="button" class="answer">somethig has an answer</button></li>
+                </ul>
+            </div>
+
+            <div class="btn-next_question">
+                <button type="button" class="next_question">Next Question</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
